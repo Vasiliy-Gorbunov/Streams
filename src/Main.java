@@ -9,7 +9,7 @@ public class Main {
 
         Stream<String> stream = Stream.of();
         Comparator<String> comparator = (String::compareTo);
-        BiConsumer<String, String> biConsumer = (o1, o2) -> System.out.println(o1 + " " + o2);
+        BiConsumer<String, String> biConsumer = (o1, o2) -> System.out.println("Min: " + o1 + " Max: " + o2);
 
         findMinMax(stream, comparator, biConsumer);
     }
